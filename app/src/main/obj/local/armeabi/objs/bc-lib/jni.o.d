@@ -1,7 +1,7 @@
-/Users/xueguoliang/repo/HC/app/src/main/obj/local/armeabi/objs/bc-lib/jni.o: \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/jni.cpp \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/cn_xueguoliang_hc_Jni.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/User.h \
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/obj/local/armeabi/objs/bc-lib/jni.o: \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/jni.cpp \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/cn_xueguoliang_hc_Jni.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/User.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/string \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_prolog.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
@@ -91,11 +91,13 @@
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_num_get.c \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_string_io.c \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
-  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Json.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/cJSON.h
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/cn_xueguoliang_hc_Jni.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/cn_xueguoliang_hc_Jni.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/User.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/User.h:
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/string:
 
@@ -276,3 +278,7 @@
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_epilog.h:
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
+
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Json.h:
+
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/cJSON.h:

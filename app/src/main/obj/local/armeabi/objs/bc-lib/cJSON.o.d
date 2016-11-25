@@ -1,5 +1,5 @@
-/Users/xueguoliang/repo/HC/app/src/main/obj/local/armeabi/objs/bc-lib/cJSON.o: \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/cJSON.c \
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/obj/local/armeabi/objs/bc-lib/cJSON.o: \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/cJSON.c \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/string.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/features.h \
@@ -21,7 +21,7 @@
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/limits.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/ctype.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_prolog.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/cJSON.h
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/cJSON.h
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/string.h:
 
@@ -65,4 +65,4 @@
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_prolog.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/cJSON.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/cJSON.h:

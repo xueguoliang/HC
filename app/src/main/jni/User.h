@@ -6,6 +6,8 @@
 #define HC_USER_H
 
 #include <string>
+#include "Json.h"
+
 using namespace std;
 
 class User {
@@ -16,6 +18,9 @@ private:
 public:
     static User* instance();
     bool Login(string username, string password);
+    bool Reg(string username, string password, string mobile, string email, string id);
+
+    bool execute(Json& obj);
 };
 
 

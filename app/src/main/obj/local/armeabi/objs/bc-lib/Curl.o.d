@@ -1,6 +1,6 @@
-/Users/xueguoliang/repo/HC/app/src/main/obj/local/armeabi/objs/bc-lib/Curl.o: \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/Curl.cpp \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/Curl.h \
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/obj/local/armeabi/objs/bc-lib/Curl.o: \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Curl.cpp \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Curl.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/string \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_prolog.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
@@ -101,15 +101,15 @@
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_string_io.c \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/curl.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/curlver.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/curlbuild.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/curlrules.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/easy.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/multi.h \
-  /Users/xueguoliang/repo/HC/app/src/main/jni/Util.h
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curl.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curlver.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curlbuild.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curlrules.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/easy.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/multi.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Util.h
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/Curl.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Curl.h:
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/string:
 
@@ -311,16 +311,16 @@
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/curl.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curl.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/curlver.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curlver.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/curlbuild.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curlbuild.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/curlrules.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curlrules.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/easy.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/easy.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/curl/include/curl/multi.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/multi.h:
 
-/Users/xueguoliang/repo/HC/app/src/main/jni/Util.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Util.h:

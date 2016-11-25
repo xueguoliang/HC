@@ -18,4 +18,5 @@ public class Jni {
 
     // native接口
     public native boolean Login(String username, String password);
+    public native boolean Reg(String username, String password, String mobile, String email, String id);
 }

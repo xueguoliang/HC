@@ -41,3 +41,15 @@ JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Login
 {
     return (jboolean)User::instance()->Login(j2c(env, jUsername), j2c(env, jPassword));
 }
+
+JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Reg
+        (JNIEnv *env, jobject /* Jni object */,
+         jstring jUsername, jstring jPassword, jstring mobile, jstring email, jstring id)
+{
+    return (jboolean)User::instance()->Reg(
+            j2c(env, jUsername),
+            j2c(env, jPassword),
+            j2c(env, mobile),
+            j2c(env, email),
+            j2c(env, id));
+}
