@@ -19,10 +19,7 @@
 #define HC_MOBILE "mobile"
 #define HC_EMAIL "email"
 #define HC_ID "id"
-
-
-
-
+#define HC_LOGINTYPE "logintype"
 
 
 #endif //HC_DEF_H

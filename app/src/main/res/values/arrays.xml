@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="logintype">
+        <item>司机</item>
+        <item>乘客</item>
+    </string-array>
+</resources>

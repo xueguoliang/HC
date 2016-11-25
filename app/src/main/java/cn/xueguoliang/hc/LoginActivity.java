@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -60,11 +61,14 @@ public class LoginActivity extends AppCompatActivity {
     private  void LoginClicked() {
         EditText editUsername = (EditText) findViewById(R.id.username);
         EditText editPassword = (EditText) findViewById(R.id.password);
+        Spinner spinType = (Spinner)findViewById(R.id.type);
 
+
+        String type = spinType.getSelectedItem().toString();
         String username = editUsername.getText().toString();
         String password = editPassword.getText().toString();
 
-        boolean ok = Jni.instance().Login(username, password);
+        boolean ok = Jni.instance().Login(username, password, type);
         if (ok) {
             Log.i(tag, "login success");
         } else {

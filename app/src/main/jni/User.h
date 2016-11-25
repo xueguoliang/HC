@@ -17,7 +17,7 @@ private:
 
 public:
     static User* instance();
-    bool Login(string username, string password);
+    bool Login(string username, string password, string type);
     bool Reg(string username, string password, string mobile, string email, string id);
 
     bool execute(Json& obj);

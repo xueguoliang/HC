@@ -15,12 +15,13 @@ User* User::instance() {
     return obj;
 }
 
-bool User::Login(string username, string password) {
+bool User::Login(string username, string password, string type) {
     Json jObj;
 
     jObj.insert(HC_CMD, HC_LOGIN);
     jObj.insert(HC_USERNAME, username);
     jObj.insert(HC_PASSWORD, password);
+    jObj.insert(HC_LOGINTYPE, type);
 
     return execute(jObj);
 }

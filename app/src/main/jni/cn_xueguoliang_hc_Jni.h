@@ -13,7 +13,8 @@ extern "C" {
  * Signature: (Ljava/lang/String;Ljava/lang/String;)Z
  */
 JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Login
-  (JNIEnv *, jobject, jstring, jstring);
+  (JNIEnv *, jobject, jstring, jstring, jstring);
+
 JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Reg
         (JNIEnv *env, jobject /* Jni object */,
          jstring jUsername, jstring jPassword, jstring mobile, jstring email, jstring id);

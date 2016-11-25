@@ -52,11 +52,18 @@
         android:inputType="textEmailAddress"
         />
 
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/type"
+       android:entries="@array/logintype"
+       android:layout_below="@id/email"/>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/login"
-        android:layout_below="@id/email"
+        android:layout_below="@id/type"
         android:text="登陆"/>
 
     <Button

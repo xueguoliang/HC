@@ -37,9 +37,10 @@ string j2c(JNIEnv* env, jstring jstr)
 }
 
 JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Login
-        (JNIEnv *env, jobject /* Jni object */, jstring jUsername, jstring jPassword)
+        (JNIEnv *env, jobject /* Jni object */, jstring jUsername, jstring jPassword, jstring type)
 {
-    return (jboolean)User::instance()->Login(j2c(env, jUsername), j2c(env, jPassword));
+    return (jboolean)User::instance()->Login(j2c(env, jUsername), j2c(env, jPassword),
+    j2c(env, type));
 }
 
 JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Reg
