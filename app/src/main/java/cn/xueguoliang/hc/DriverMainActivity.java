@@ -18,6 +18,7 @@ public class DriverMainActivity extends AppCompatActivity {
     private MapView mapView;
     private AMap aMap;
     private Button button;
+    private static final String tag = "DriverMainActivityTag";
 
     private String[] texts = {"开始接单", "停止接单", "接单确认", "乘客已经上车", "目的地已经到达"};
     private final int startWork = 0;
@@ -68,6 +69,9 @@ public class DriverMainActivity extends AppCompatActivity {
                             {
                                 // 发送位置给服务器
                                 Jni.instance().LocationChange(aMapLocation.getLongitude(),
+                                        aMapLocation.getLatitude());
+
+                                Log.e(tag, aMapLocation.getLongitude() + ":" +
                                         aMapLocation.getLatitude());
                             }
                         }
