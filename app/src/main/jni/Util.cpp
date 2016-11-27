@@ -3,3 +3,9 @@
 //
 
 #include "Util.h"
+
+string Util::toString(double d) {
+    char buf[128];
+    sprintf(buf, "%.9f", d);
+    return string(buf);
+}

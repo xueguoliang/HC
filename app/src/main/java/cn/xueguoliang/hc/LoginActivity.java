@@ -1,5 +1,6 @@
 package cn.xueguoliang.hc;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -71,6 +72,13 @@ public class LoginActivity extends AppCompatActivity {
         boolean ok = Jni.instance().Login(username, password, type);
         if (ok) {
             Log.i(tag, "login success");
+
+            // 跳转到DriverMainActivity
+            Intent intent = new Intent(getApplication(), DriverMainActivity.class);
+            startActivity(intent);
+
+            finish();
+
         } else {
             Log.e(tag, "login error");
         }

@@ -54,3 +54,10 @@ JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Reg
             j2c(env, email),
             j2c(env, id));
 }
+
+JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_LocationChange
+        (JNIEnv *, jobject, jdouble lng, jdouble lat)
+{
+    User::instance()->LocationChange(lng, lat);
+    return (jboolean)true;
+}

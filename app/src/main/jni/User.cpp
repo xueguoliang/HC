@@ -7,6 +7,7 @@
 #include "Util.h"
 #include "Curl.h"
 #include "Def.h"
+#include "Data.h"
 
 User::User() { }
 
@@ -23,7 +24,17 @@ bool User::Login(string username, string password, string type) {
     jObj.insert(HC_PASSWORD, password);
     jObj.insert(HC_LOGINTYPE, type);
 
-    return execute(jObj);
+    Json resp;
+
+    bool ret = execute(jObj, &resp);
+    if(ret)
+    {
+        // 保存服务器返回的session信息
+        Data::instacne()->_session = resp.value(HC_SESSION);
+        HC_LOG("save session %s\n", resp.value(HC_SESSION).c_str());
+    }
+
+    return ret;
 }
 
 bool User::Reg(string username, string password, string mobile, string email, string id) {
@@ -40,11 +51,15 @@ bool User::Reg(string username, string password, string mobile, string email, st
     return execute(jObj);
 }
 
-bool User::execute(Json& obj) {
+bool User::execute(Json& obj, Json* pResp) {
     string jsonBuf = obj.print();
 
     HC_LOG("%s\n", jsonBuf.c_str());
     // send to server ...
+
+    Json tmpResp;
+    Json* resp = &tmpResp;
+    if(pResp) resp = pResp;
 
     Curl curl(HC_URL);
     bool bOK = curl.execute(jsonBuf);
@@ -52,19 +67,29 @@ bool User::execute(Json& obj) {
     {
         string respData = curl.responseData();
 
-        Json respJson;
-        respJson.parse(respData);
 
-        string result = respJson.value(HC_RESULT);
+        resp->parse(respData);
+
+        string result = resp->value(HC_RESULT);
         if(result == HC_OK)
         {
             return true;
         }
         else
         {
-            string reason = respJson.value(HC_REASON);
+            string reason = resp->value(HC_REASON);
             HC_LOG("error: %s\n", reason.c_str());
         }
     }
     return false;
+}
+
+void User::LocationChange(double lng, double lat) {
+    Json jObj;
+    jObj.insert(HC_CMD, HC_LOCATION_CHANGE);
+    jObj.insert(HC_LNG, Util::toString(lng));
+    jObj.insert(HC_LAT, Util::toString(lat));
+    jObj.insert(HC_SESSION, Data::instacne()->_session);
+
+    execute(jObj);
 }

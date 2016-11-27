@@ -19,8 +19,8 @@ public:
     static User* instance();
     bool Login(string username, string password, string type);
     bool Reg(string username, string password, string mobile, string email, string id);
-
-    bool execute(Json& obj);
+    void LocationChange(double lng, double lat);
+    bool execute(Json& obj, Json* resp = NULL);
 };
 
 

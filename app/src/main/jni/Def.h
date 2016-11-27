@@ -6,7 +6,7 @@
 #define HC_DEF_H
 
 
-#define HC_URL "http://192.168.22.24:10251"
+#define HC_URL "http://192.168.22.29:10251"
 #define HC_USERNAME "username"
 #define HC_PASSWORD "password"
 #define HC_RESULT "result"
@@ -20,6 +20,10 @@
 #define HC_EMAIL "email"
 #define HC_ID "id"
 #define HC_LOGINTYPE "logintype"
+#define HC_SESSION "session"
+#define HC_LOCATION_CHANGE "locationchange"
+#define HC_LNG "lng"
+#define HC_LAT "lat"
 
 
 #endif //HC_DEF_H

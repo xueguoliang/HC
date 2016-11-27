@@ -111,7 +111,8 @@
   /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/curlrules.h \
   /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/easy.h \
   /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/multi.h \
-  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Def.h
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Def.h \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Data.h
 
 /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/User.h:
 
@@ -336,3 +337,5 @@
 /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/curl/include/curl/multi.h:
 
 /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Def.h:
+
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Data.h:

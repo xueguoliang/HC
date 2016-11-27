@@ -9,7 +9,7 @@ include $(PREBUILT_STATIC_LIBRARY)
 
 
 include $(CLEAR_VARS)
-LOCAL_SRC_FILES:= jni.cpp User.cpp cJSON.c Json.cpp Util.cpp Curl.cpp
+LOCAL_SRC_FILES:= jni.cpp User.cpp cJSON.c Json.cpp Util.cpp Curl.cpp Data.cpp
 LOCAL_MODULE:=bc-lib
 # 将静态库编译到动态库中
 LOCAL_STATIC_LIBRARIES := curl

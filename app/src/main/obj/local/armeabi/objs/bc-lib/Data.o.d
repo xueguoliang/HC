@@ -1,9 +1,19 @@
-/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/obj/local/armeabi/objs/bc-lib/Util.o: \
-  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Util.cpp \
-  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Util.h \
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/obj/local/armeabi/objs/bc-lib/Data.o: \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Data.cpp \
+  /Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Data.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/string \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_prolog.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_cprolog.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/features.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_stlport_version.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/user_config.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/compat.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/host.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/_system.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/_android.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/_gcc.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/stl_confix.h \
+  /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/debug/_debug.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_string.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_alloc.h \
@@ -92,13 +102,33 @@
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_epilog.h \
   /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_config_compat_post.h
 
-/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Util.h:
+/Users/xueguoliang/BJ17-Heiche/HC/app/src/main/jni/Data.h:
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/string:
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_prolog.h:
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_cprolog.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/features.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/_stlport_version.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/user_config.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/compat.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/host.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/_system.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/_android.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/_gcc.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/stl_confix.h:
+
+/Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/config/_native_headers.h:
 
 /Users/xueguoliang/android/sdk/ndk-bundle/sources/cxx-stl/stlport/stlport/stl/debug/_debug.h:
 

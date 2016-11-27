@@ -10,14 +10,27 @@ extern "C" {
 /*
  * Class:     cn_xueguoliang_hc_Jni
  * Method:    Login
- * Signature: (Ljava/lang/String;Ljava/lang/String;)Z
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
  */
 JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Login
   (JNIEnv *, jobject, jstring, jstring, jstring);
 
+/*
+ * Class:     cn_xueguoliang_hc_Jni
+ * Method:    Reg
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
+ */
 JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Reg
-        (JNIEnv *env, jobject /* Jni object */,
-         jstring jUsername, jstring jPassword, jstring mobile, jstring email, jstring id);
+  (JNIEnv *, jobject, jstring, jstring, jstring, jstring, jstring);
+
+/*
+ * Class:     cn_xueguoliang_hc_Jni
+ * Method:    LocationChange
+ * Signature: (DD)Z
+ */
+JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_LocationChange
+  (JNIEnv *, jobject, jdouble, jdouble);
+
 #ifdef __cplusplus
 }
 #endif
