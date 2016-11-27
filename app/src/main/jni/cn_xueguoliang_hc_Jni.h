@@ -31,6 +31,14 @@ JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_Reg
 JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_LocationChange
   (JNIEnv *, jobject, jdouble, jdouble);
 
+/*
+ * Class:     cn_xueguoliang_hc_Jni
+ * Method:    StartOrder
+ * Signature: (DDDD)Z
+ */
+JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_StartOrder
+  (JNIEnv *, jobject, jdouble, jdouble, jdouble, jdouble);
+
 #ifdef __cplusplus
 }
 #endif

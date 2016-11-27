@@ -73,8 +73,15 @@ public class LoginActivity extends AppCompatActivity {
         if (ok) {
             Log.i(tag, "login success");
 
-            // 跳转到DriverMainActivity
-            Intent intent = new Intent(getApplication(), DriverMainActivity.class);
+            Intent intent;
+
+            if(type.equals("司机")) {
+                // 跳转到DriverMainActivity
+                intent = new Intent(getApplication(), DriverMainActivity.class);
+            }
+            else {
+                intent = new Intent(getApplication(), PassangerMainActivity.class);
+            }
             startActivity(intent);
 
             finish();

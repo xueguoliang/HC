@@ -20,6 +20,7 @@ public:
     ~Json();
 
     void insert(string key, string value);
+    void insert(string key, Json& value);
     string print();
 
     void parse(string json);

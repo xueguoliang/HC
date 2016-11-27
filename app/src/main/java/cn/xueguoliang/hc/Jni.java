@@ -20,4 +20,5 @@ public class Jni {
     public native boolean Login(String username, String password, String type);
     public native boolean Reg(String username, String password, String mobile, String email, String id);
     public native boolean LocationChange(double lng, double lat);
+    public native boolean StartOrder(double lng1, double lat1, double lng2, double lat2);
 }

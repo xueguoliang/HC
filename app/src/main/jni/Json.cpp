@@ -12,6 +12,11 @@ Json::~Json() {
     cJSON_Delete(_root);
 }
 
+void Json::insert(string key, Json &value) {
+    cJSON_AddItemToObject(_root, key.c_str(), value._root);
+    value._root = cJSON_CreateObject();
+}
+
 void Json::insert(string key, string value) {
     cJSON_AddItemToObject(_root, key.c_str(), cJSON_CreateString(value.c_str()));
 }
