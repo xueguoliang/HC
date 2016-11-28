@@ -13,6 +13,7 @@ import android.widget.Button;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.maps.AMap;
 import com.amap.api.maps.LocationSource;
@@ -38,6 +39,7 @@ public class PassangerMainActivity extends AppCompatActivity {
     private LatLonPoint startPos = new LatLonPoint(0, 0);
     private LatLonPoint endPos;
     private String city = "北京";
+    private static final String tag = "PassMainActivityTag";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,7 @@ public class PassangerMainActivity extends AppCompatActivity {
         aMap = mapView.getMap();
 
         setupAutoComplete();
+        setMyLoation();
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,8 +66,32 @@ public class PassangerMainActivity extends AppCompatActivity {
     }
 
     private void getEndPos(){
-        PoiSearch.Query query = new PoiSearch.Query(city, "", target.getText().toString().trim());
+        PoiSearch.Query query = new PoiSearch.Query(target.getText().toString().trim(), "", city);
         PoiSearch search = new PoiSearch(getApplication(), query);
+
+        search.setOnPoiSearchListener(new PoiSearch.OnPoiSearchListener() {
+            @Override
+            public void onPoiSearched(PoiResult poiResult, int i) {
+                PoiItem item = poiResult.getPois().get(0);
+                endPos = item.getLatLonPoint();
+
+                Jni.instance().StartOrder(startPos.getLongitude(),
+                        startPos.getLatitude(),
+                        endPos.getLongitude(),
+                        endPos.getLatitude());
+
+                Log.e(tag, "start order .........");
+            }
+
+            @Override
+            public void onPoiItemSearched(PoiItem poiItem, int i) {
+
+            }
+        });
+
+        search.searchPOIAsyn();
+
+        /*
         PoiResult poiResult = null;
         try {
             poiResult = search.searchPOI();
@@ -78,13 +105,12 @@ public class PassangerMainActivity extends AppCompatActivity {
 
         PoiItem targetPoi = poiResult.getPois().get(0);
         endPos = targetPoi.getLatLonPoint();
+        */
     }
 
     private void startOrder(){
         // 把开始的位置和目标位置，发送给服务器，估计价格
         getEndPos();
-
-
     }
 
     private void setupAutoComplete(){
@@ -100,9 +126,10 @@ public class PassangerMainActivity extends AppCompatActivity {
                 // 搜索POI
                 // 把搜索的POI列表放入AutuComplteTextView的备选列表中
                 String keyword = target.getText().toString().trim();
+                Log.e(tag, "search keyword xxxxis "+ keyword);
 
                 // 搜索条件
-                PoiSearch.Query query = new PoiSearch.Query(city, "", keyword);
+                PoiSearch.Query query = new PoiSearch.Query(keyword, "", city);
 
                 // 进行搜索
                 PoiSearch search = new PoiSearch(getApplication(), query);
@@ -137,6 +164,8 @@ public class PassangerMainActivity extends AppCompatActivity {
 
             }
         });
+
+
     }
 
     private void setMyLoation(){
@@ -148,6 +177,11 @@ public class PassangerMainActivity extends AppCompatActivity {
                 if(locationClient == null)
                 {
                     locationClient = new AMapLocationClient(getApplication());
+
+                    AMapLocationClientOption option = new AMapLocationClientOption();
+                    option.setInterval(2000 * 10);
+                    locationClient.setLocationOption(option);
+
                     locationClient.setLocationListener(new AMapLocationListener() {
                         @Override
                         public void onLocationChanged(AMapLocation aMapLocation) {

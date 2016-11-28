@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
 import com.amap.api.location.AMapLocationListener;
 import com.amap.api.maps.AMap;
 import com.amap.api.maps.LocationSource;
@@ -61,6 +62,9 @@ public class DriverMainActivity extends AppCompatActivity {
                 if(locationClient == null)
                 {
                     locationClient = new AMapLocationClient(getApplication());
+                    AMapLocationClientOption option = new AMapLocationClientOption();
+                    option.setInterval(2000 * 10);
+                    locationClient.setLocationOption(option);
                     locationClient.setLocationListener(new AMapLocationListener() {
                         @Override
                         public void onLocationChanged(AMapLocation aMapLocation) {

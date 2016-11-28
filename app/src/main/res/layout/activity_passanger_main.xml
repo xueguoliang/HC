@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_toLeftOf="@+id/start"
         android:hint="请输入目的地"
-        android:id="@+id/target"/>
+        android:id="@+id/target"
+        android:popupBackground="@android:color/black" />
 
     <com.amap.api.maps.MapView
         android:layout_width="match_parent"

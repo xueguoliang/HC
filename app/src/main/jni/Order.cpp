@@ -48,7 +48,13 @@ bool Order::start(double lng1, double lat1, double lng2, double lat2) {
     jObj.insert(HC_CMD, HC_START_ORDER);
     jObj.insert(HC_SESSION, Data::instacne()->_session);
 
-    return execute(jObj);
+    Json resp;
+    bool ret= execute(jObj, &resp);
+    if(!ret)
+    {
+        HC_LOG("***************start order error, reason is %s\n", resp.value(HC_REASON).c_str());
+    }
+    return ret;
 }
 
 bool Order::execute(Json& obj, Json* pResp) {

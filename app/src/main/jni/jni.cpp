@@ -3,6 +3,7 @@
 //
 #include "cn_xueguoliang_hc_Jni.h"
 #include "User.h"
+#include "Order.h"
 
 jstring c2j(JNIEnv* env, string cstr)
 {
@@ -60,4 +61,11 @@ JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_LocationChange
 {
     User::instance()->LocationChange(lng, lat);
     return (jboolean)true;
+}
+
+
+JNIEXPORT jboolean JNICALL Java_cn_xueguoliang_hc_Jni_StartOrder
+        (JNIEnv *, jobject, jdouble lng1, jdouble lat1, jdouble lng2, jdouble lat2)
+{
+    return (jboolean)Order::instance()->start(lng1, lat1, lng2, lat2);
 }
